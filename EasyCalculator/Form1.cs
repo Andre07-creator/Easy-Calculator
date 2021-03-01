@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace EasyCalculator
 {
-    public partial class Form1 : Form
+    public partial class FrmCalculator : Form
     {
         double value1, value2, total;
-        public Form1()
+        public FrmCalculator()
         {
             InitializeComponent();
         }

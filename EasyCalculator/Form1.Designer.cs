@@ -1,7 +1,7 @@
 ﻿
 namespace EasyCalculator
 {
-    partial class Form1
+    partial class FrmCalculator
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,6 +29,7 @@ namespace EasyCalculator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalculator));
             this.btnSum = new System.Windows.Forms.Button();
             this.lblSimpleCalculator = new System.Windows.Forms.Label();
             this.lblvalue1 = new System.Windows.Forms.Label();
@@ -176,10 +177,11 @@ namespace EasyCalculator
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // Form1
+            // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(523, 291);
             this.Controls.Add(this.btnExit);
@@ -195,8 +197,9 @@ namespace EasyCalculator
             this.Controls.Add(this.lblvalue1);
             this.Controls.Add(this.lblSimpleCalculator);
             this.Controls.Add(this.btnSum);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FrmCalculator";
+            this.Text = "EasyCalculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
